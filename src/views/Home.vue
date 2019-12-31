@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-parallax height="900" src="../assets/1.jpg">
+      <v-layout column align="center" justify-center>
+        <h1>
+        All of your favorite Anime in one place
+        </h1>
+      </v-layout>
+    </v-parallax>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <h3>Welcome to AniKnight</h3>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'home',
   components: {
-    HelloWorld
   }
 }
 </script>

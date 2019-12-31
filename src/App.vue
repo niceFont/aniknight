@@ -1,14 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <v-app id="app">
+
+    <v-app-bar 
+    color="white"
+    elevate-on-scroll
+    app>
+    <v-toolbar  flat>
+      <v-toolbar-title>AniKnight</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items>
+      <v-btn height="10" small text to="/">Home</v-btn>
+      <v-btn small text to="/about">About</v-btn>
+      <v-btn height="10" small text to="/mylist">My list</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    </v-app-bar>
+    <v-content>
     <router-view/>
-  </div>
+    </v-content>
+    <v-footer></v-footer>
+  </v-app>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,14 +33,14 @@
 
 #nav {
   padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
