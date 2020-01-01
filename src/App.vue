@@ -1,22 +1,17 @@
 <template>
   <v-app id="app">
-
-    <v-app-bar 
-    color="white"
-    elevate-on-scroll
-    app>
-    <v-toolbar  flat>
-      <v-toolbar-title>AniKnight</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
-      <v-btn height="10" small text to="/">Home</v-btn>
-      <v-btn small text to="/about">About</v-btn>
-      <v-btn height="10" small text to="/mylist">My list</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <v-app-bar color="white" elevate-on-scroll app>
+      <v-toolbar flat>
+        <v-toolbar-title>AniKnight</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn height="10" small text to="/">Home</v-btn>
+          <v-btn height="10" small text to="/mylist">My list</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
     </v-app-bar>
     <v-content>
-    <router-view/>
+      <router-view />
     </v-content>
     <v-footer></v-footer>
   </v-app>
@@ -24,7 +19,7 @@
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
