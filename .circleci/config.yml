@@ -6,14 +6,11 @@ jobs:
     parallelism: 1
     steps:
       - run:
-          name: Installing jest globally
-          command: npm install -g jest 
-      - run:
           name: Install JUnit coverage reporter
           command: npm install --save-dev jest-junit
       - run:
           name: Run tests with JUnit as reporter
-          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+          command: npm run test:ci 
           environment:
             JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
       - checkout
