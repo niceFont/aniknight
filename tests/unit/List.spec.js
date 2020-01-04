@@ -2,7 +2,7 @@ import Vuetify from 'vuetify'
 import Vuex from 'vuex'
 import VueRouter from "vue-router"
 import Vue from 'vue'
-import { mount, createLocalVue, shallowMount } from "@vue/test-utils"
+import { mount, createLocalVue } from "@vue/test-utils"
 import List from "../../src/components/MyList/List.vue"
 
 describe("List", () => {
