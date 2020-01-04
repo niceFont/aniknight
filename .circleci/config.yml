@@ -5,6 +5,14 @@ jobs:
       - image: circleci/node:8.11.2
     parallelism: 1
     steps:
+      - run:
+        name: Install JUnit coverage reporter
+        command: yarn add --dev jest-junit
+      - run:
+        name: Run tests with JUnit as reporter
+        command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+        environment:
+          JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
       - checkout
       - run: npm install
       - run: npm run test:unit
