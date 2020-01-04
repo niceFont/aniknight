@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
-        <span v-if="duplicateError">Entry already exists</span>
+    <v-row justify="center">
+      <v-col cols="8">
+        <v-alert elevation="1" type="error" border="left" v-if="duplicateError">Entry already exists</v-alert>
       </v-col>
     </v-row>
     <v-row class="mt-10" justify="center">
@@ -13,9 +13,9 @@
             :items="items"
             :loading="loading"
             :search-input.sync="search"
-            cache-items
             v-model="anime.title"
             outlined
+            clearable
             @focus="resetError"
             hint="Enter the Anime you want to add."
             label="Title"
@@ -86,14 +86,12 @@ export default {
     submitAnime() {
       const notduplicate = this.checkForDuplicate(this.myList);
       if (notduplicate) {
-        debugger;
         this.$store.dispatch("addAnime", {
           title: this.selected.title.userPreferred,
           url: this.formatUrl(this.anime.url),
           id: this.selected.id,
           src: this.selected.coverImage.medium
         });
-        debugger;
         this.clearAll();
       } else {
         this.duplicateError = true;
@@ -147,4 +145,7 @@ export default {
 </script>
 
 <style>
+#error {
+  color: red;
+}
 </style>
