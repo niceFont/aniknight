@@ -10,7 +10,7 @@ jobs:
           command: npm install --save-dev jest-junit
       - run:
           name: Run tests with JUnit as reporter
-          command: npm run test:ci 
+          command: jest --ci --runInBand --reporters=default --reporters=jest-junit 
           environment:
             JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
       - checkout
