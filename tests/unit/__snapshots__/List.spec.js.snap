@@ -11,76 +11,78 @@ exports[`List should match snapshot 1`] = `
       class="v-list v-sheet v-sheet--tile theme--light"
       role="list"
     >
-      <div
-        class="d-flex flex-row mb-2 v-card v-sheet theme--light"
-      >
+      <span>
         <div
-          class="row"
+          class="d-flex flex-row mb-2 v-card v-sheet theme--light"
         >
           <div
-            class="d-flex align-center justify-center col col-4"
+            class="row"
           >
             <div
-              class="v-avatar"
-              style="height: 64px; min-width: 64px; width: 64px;"
+              class="d-flex align-center justify-center col col-4"
             >
               <div
-                class="v-responsive v-image"
+                class="v-avatar"
+                style="height: 64px; min-width: 64px; width: 64px;"
               >
                 <div
-                  class="v-image__image v-image__image--preload v-image__image--cover"
-                  mode="in-out"
-                  name="fade-transition"
-                  style="background-position: center center;"
-                />
-                <div
-                  class="v-responsive__content"
-                />
+                  class="v-responsive v-image"
+                >
+                  <div
+                    class="v-image__image v-image__image--preload v-image__image--cover"
+                    mode="in-out"
+                    name="fade-transition"
+                    style="background-position: center center;"
+                  />
+                  <div
+                    class="v-responsive__content"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-           
-          <div
-            class="d-flex align-center justify-space-around col"
-          >
-            <h3>
-              test
-            </h3>
-          </div>
-           
-          <div
-            class="d-flex align-center col col-2"
-          >
-            <router-link-stub
-              class="v-btn v-btn--flat v-btn--router v-btn--text theme--light v-size--default"
+             
+            <div
+              class="d-flex align-center justify-space-around col"
             >
-              <span
-                class="v-btn__content"
-              >
-                Visit
-              </span>
-            </router-link-stub>
-          </div>
-           
-          <div
-            class="d-flex align-center col col-2"
-          >
-            <button
-              class="v-btn v-btn--flat v-btn--icon v-btn--round v-btn--text theme--light v-size--default error--text"
-              type="button"
+              <h3>
+                test
+              </h3>
+            </div>
+             
+            <div
+              class="d-flex align-center col col-2"
             >
-              <span
-                class="v-btn__content"
+              <router-link-stub
+                class="v-btn v-btn--flat v-btn--router v-btn--text theme--light v-size--default"
               >
-                <i
-                  aria-hidden="true"
-                  class="v-icon notranslate mdi mdi-minus-circle theme--light"
-                />
-              </span>
-            </button>
+                <span
+                  class="v-btn__content"
+                >
+                  Visit
+                </span>
+              </router-link-stub>
+            </div>
+             
+            <div
+              class="d-flex align-center col col-2"
+            >
+              <button
+                class="v-btn v-btn--flat v-btn--icon v-btn--round v-btn--text theme--light v-size--default error--text"
+                type="button"
+              >
+                <span
+                  class="v-btn__content"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="v-icon notranslate mdi mdi-minus-circle theme--light"
+                  />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </span>
     </div>
      
     <!---->

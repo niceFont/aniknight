@@ -5,10 +5,10 @@ exports[`ListForm.vue Matches snapshot 1`] = `
   class="container"
 >
   <div
-    class="row"
+    class="row justify-center"
   >
     <div
-      class="col"
+      class="col col-8"
     >
       <!---->
     </div>
@@ -33,7 +33,7 @@ exports[`ListForm.vue Matches snapshot 1`] = `
             <div
               aria-expanded="false"
               aria-haspopup="listbox"
-              aria-owns="list-26"
+              aria-owns="list-27"
               class="v-input__slot"
               role="combobox"
             >
@@ -63,6 +63,18 @@ exports[`ListForm.vue Matches snapshot 1`] = `
                   id="t1"
                   type="text"
                 />
+                <div
+                  class="v-input__append-inner"
+                >
+                  <div
+                    class="v-input__icon v-input__icon--"
+                  >
+                    <i
+                      class="v-icon notranslate v-icon--link material-icons theme--light"
+                      role="button"
+                    />
+                  </div>
+                </div>
                 <div
                   class="v-input__append-inner"
                 >
