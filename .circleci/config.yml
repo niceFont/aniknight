@@ -2,9 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.11.2
+      - image: circleci/node:current
     parallelism: 1
     steps:
+      - run:
+          name: Installing node modules
+          command: npm install
       - run:
           name: Install JUnit coverage reporter
           command: npm install --save-dev jest-junit
@@ -14,5 +17,4 @@ jobs:
           environment:
             JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
       - checkout
-      - run: npm install
       - run: npm run test:unit
