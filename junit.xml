@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="2.069">
+  <testsuite name="List" errors="0" failures="0" skipped="0" timestamp="2020-01-04T14:16:07" time="1.202" tests="4">
+    <testcase classname="List should render" name="List should render" time="0.114">
+    </testcase>
+    <testcase classname="List should match snapshot" name="List should match snapshot" time="0.034">
+    </testcase>
+    <testcase classname="List should render data from store" name="List should render data from store" time="0.029">
+    </testcase>
+    <testcase classname="List should call action" name="List should call action" time="0.034">
+    </testcase>
+  </testsuite>
+  <testsuite name="ListForm.vue" errors="0" failures="0" skipped="0" timestamp="2020-01-04T14:16:07" time="1.385" tests="4">
+    <testcase classname="ListForm.vue renders" name="ListForm.vue renders" time="0.158">
+    </testcase>
+    <testcase classname="ListForm.vue Matches snapshot" name="ListForm.vue Matches snapshot" time="0.056">
+    </testcase>
+    <testcase classname="ListForm.vue calls action on click" name="ListForm.vue calls action on click" time="0.039">
+    </testcase>
+    <testcase classname="ListForm.vue should call submitAnime" name="ListForm.vue should call submitAnime" time="0.036">
+    </testcase>
+  </testsuite>
+</testsuites>

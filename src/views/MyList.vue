@@ -20,7 +20,9 @@
               <span>{{myList.length + " Entries"}}</span>
             </v-col>
           </v-row>
-          <ListForm v-if="adding" />
+          <v-expand-transition>
+          <ListForm v-show="adding" />
+          </v-expand-transition>
           <v-divider v-if="adding" class="mt-10"></v-divider>
           <List />
         </v-card>
