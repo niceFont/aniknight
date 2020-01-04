@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListForm.vue Matches snapshot 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    >
+      <!---->
+    </div>
+  </div>
+   
+  <div
+    class="row mt-10 justify-center"
+  >
+    <div
+      class="col col-8"
+    >
+      <form
+        class="v-form"
+        novalidate="novalidate"
+      >
+        <div
+          class="v-input theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-select v-autocomplete"
+        >
+          <div
+            class="v-input__control"
+          >
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-owns="list-26"
+              class="v-input__slot"
+              role="combobox"
+            >
+              <fieldset
+                aria-hidden="true"
+              >
+                <legend
+                  style="width: 0px;"
+                >
+                  <span>
+                    ​
+                  </span>
+                </legend>
+              </fieldset>
+              <div
+                class="v-select__slot"
+              >
+                <label
+                  class="v-label theme--light"
+                  for="t1"
+                  style="right: 0px; position: absolute;"
+                >
+                  Title
+                </label>
+                <input
+                  autocomplete="off"
+                  id="t1"
+                  type="text"
+                />
+                <div
+                  class="v-input__append-inner"
+                >
+                  <div
+                    class="v-input__icon v-input__icon--append"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="v-icon notranslate material-icons theme--light"
+                    >
+                      $dropdown
+                    </i>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  value="anime (2012)"
+                />
+              </div>
+              <div
+                class="v-menu"
+              >
+                <div
+                  class="v-menu__content theme--light v-autocomplete__content"
+                  style="max-height: 304px; min-width: 0px; max-width: auto; top: 12px; left: 0px; transform-origin: top left; z-index: 0; display: none;"
+                />
+              </div>
+            </div>
+            <div
+              class="v-text-field__details"
+            >
+              <div
+                class="v-messages theme--light"
+              >
+                <span
+                  class="v-messages__wrapper"
+                  name="message-transition"
+                  tag="div"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="v-input theme--light v-text-field v-text-field--enclosed v-text-field--outlined"
+        >
+          <div
+            class="v-input__control"
+          >
+            <div
+              class="v-input__slot"
+            >
+              <fieldset
+                aria-hidden="true"
+              >
+                <legend
+                  style="width: 0px;"
+                >
+                  <span>
+                    ​
+                  </span>
+                </legend>
+              </fieldset>
+              <div
+                class="v-text-field__slot"
+              >
+                <label
+                  class="v-label theme--light"
+                  for="t2"
+                  style="right: 0px; position: absolute;"
+                >
+                  Url
+                </label>
+                <input
+                  id="t2"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              class="v-text-field__details"
+            >
+              <div
+                class="v-messages theme--light"
+              >
+                <span
+                  class="v-messages__wrapper"
+                  name="message-transition"
+                  tag="div"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <button
+          class="v-btn v-btn--block v-btn--depressed theme--dark v-size--default indigo"
+          id="t3"
+          type="button"
+        >
+          <span
+            class="v-btn__content"
+          >
+            Submit
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
