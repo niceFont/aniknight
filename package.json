@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
-    "test:ci": "jest --ci --runInBand --reporters=default --reporters=jest-junit",
+    "test:ci": "jest --ci --runInBand --collectCoverage=true --reporters=default --reporters=jest-junit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

@@ -15,8 +15,8 @@ jobs:
       - checkout
       - run:
           name: Run tests with JUnit as reporter
-          command: npm run test:ci 
+          command: npm run test:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: "reports/junit/js-test-results.xml"
-      - checkout
-      - run: npm run test:unit
+      - store_artifacts:
+          path: coverage
