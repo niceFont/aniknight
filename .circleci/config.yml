@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: Install JUnit coverage reporter
-          command: npm install --save-dev jest-junit
+          command: npm install --save-dev jest jest-junit
       - run:
           name: Run tests with JUnit as reporter
           command: jest --ci --runInBand --reporters=default --reporters=jest-junit
