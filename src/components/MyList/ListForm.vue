@@ -137,7 +137,6 @@ export default {
         .then(res => {
           if (res.data.Page) this.suggestions = [...res.data.Page.ANIME];
         })
-        .catch(err => console.error(err))
         .finally(() => (this.loading = false));
     }
   }
